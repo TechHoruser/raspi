@@ -8,6 +8,11 @@
     name: java-1.8.0-openjdk
     state: present
 
+- name: install git
+  yum:
+    name: git
+    state: present
+
 - name: download jenkins.repo
   get_url:
     url: http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo
